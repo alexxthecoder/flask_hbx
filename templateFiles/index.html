@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HBX Site Made in Flask</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			height: calc(100vh - 60px);
+			width: 100%;
+			background-color: #ffff;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			overflow: auto;
+		}
+
+        #main {
+            background-image: url('/staticFiles/img01.jpg');
+            background-size: contain;
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: calc(100vh - 60px);
+        }
+
+		.title {
+			font-size: 48px;
+			margin-bottom: 30px;
+		}
+		.subtitle {
+			font-size: 24px;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #ffbc99;
+			height: 60px;
+			padding: 0 20px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		nav ul li {
+			margin: 0 10px;
+		}
+
+		nav ul li a {
+			color: #e9e7e8;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+
+		nav ul li a:hover {
+			background-color: #812d0c;
+			color: #fff;
+		}
+
+		nav a.brand {
+			font-size: 24px;
+			color: #e9e7e8;
+			text-decoration: none;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#" class="brand">HBX</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1 class="title">Welcome to my first website built with Flask</h1>
+		<p class="subtitle">This is a simple one-page website, there's nothing special going on.</p>
+	</div>
+    <div class="container" id="main"></div>
+      
+</body>
+</html>
