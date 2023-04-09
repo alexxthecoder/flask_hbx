@@ -2,9 +2,8 @@
  
 from flask import Flask, render_template
  
-# WSGI Application
-# Provide template folder name
-# The default folder name should be "templates" else need to mention custom folder name
+
+# To include html&css include template folder = folder names as written in flask root directory
 app = Flask(__name__, template_folder='templateFiles', static_folder='staticFiles')
   
 @app.route('/')
